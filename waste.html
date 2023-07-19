@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+     
+        body{
+            background-color: rgb(243, 243, 243);
+             overflow: scroll;
+              overflow-x: hidden;
+}
+
+        .header{
+            padding: 0%;
+            margin: 0%;
+            height: 45px;
+            background-color:rgb(223, 46, 56);
+        }
+        .header_search{
+         position: absolute;
+         top: 10px;
+         left: 150px;
+        }
+        .header_search img{
+           position: absolute;
+           top: 7px;
+           left:278px;
+        }
+
+       .header_search_input{
+        padding: 2px;
+        width: 300px;
+        border: 0px;
+        box-shadow: 0 0 5px rgb(173, 173, 173);
+        }
+       .header_log{
+         top: 10px;
+         left: 500px;
+         position: absolute;
+        }
+        .header_log_login{
+          padding: 2px;
+          width: 80px;
+          border: 0px;
+          box-shadow:0 0 5px rgb(173, 173, 173) ;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: medium;
+        }
+        .header_log img{
+            position: absolute;
+            top: 8px;
+            left:62px;
+        }
+        .sign{
+            position: absolute;
+            top: 8px;
+            left: 780px;
+        }
+        .signin{
+            width: 100px;
+        }
+        .sign img{
+            position: absolute;
+            top: 10px;
+            left: 82px;
+        }
+        .header_list{
+            left: 640px;
+            position: absolute;
+            top: 10px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .c_i{
+         position: absolute;
+         top: 9px;
+         right: 65px;
+        }
+        ul{
+            padding: 0%;
+            margin: 0%;
+            list-style-type: none;
+            top: 5px;
+        }
+        li a{
+            display: inline;
+            top: 5px;
+            text-decoration: none;
+            color: black;
+            font-size: large;
+        }
+        .header_list_list{
+            position:absolute;
+            left: 320px;
+            top: 2px;
+            font-weight: bold;
+        }
+        .header_list_list_more{
+         text-decoration: none;
+         color: black;
+         position:absolute;
+         font-size: large;
+         left: 55px;
+         /* z-index: 1; */
+        }
+        .header_list_list_more_content{
+            text-decoration: none;
+            color: black;
+            display: none;
+            margin-top: 35px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+            background-color:rgb(233, 239, 238);
+            position: relative;
+            
+        }
+        .header_list_list_more_content a{
+            text-decoration: none;
+            font-size: smaller;
+            display: block;
+            padding: 12px ;
+            color:black; 
+            position: relative;
+            width: 170px; 
+               
+        }
+        .header_list_list_more_content a:hover{
+             background-color:rgb(190, 178, 179);
+            
+
+        }
+        .header_list_list:hover .header_list_list_more_content{
+           display: block;
+           z-index: 1;
+        }
+        .header_list_list_list_cart{
+            left: 500px;
+            position: absolute;
+            top: 2px;
+            font-weight: bold;
+        }
+        .images{
+            top: 30px;
+            position: relative;
+            display: flex;
+            float: left;
+            padding: 10px ;
+            /* justify-content: space-evenly; */
+         
+        }
+        .images_a{
+           position: absolute;
+           left: -610px;    
+        }
+        .images_b{
+           position: absolute;
+           left: -450px;    
+        }
+        .images_c{
+           position: absolute;
+           left: -250px;    
+        }
+        .images_d{
+           position: absolute;
+           left: -50px;    
+        }
+        .images_e{
+           position: absolute;
+           left: 150px;    
+        }
+        .images_f{
+           position: absolute;
+           left: 340px;    
+        }
+        .images_g{
+           position: absolute;
+           left: 520px;    
+        }
+        .images_names{
+            margin-top: 115px;
+            display: inline;
+            float: left;
+        }
+        .images_names a{
+           text-decoration: none;
+           color: black;
+           font-family: 'Times New Roman', Times, serif;
+        }
+        .images_names_1{
+            position: absolute;
+            left:-595px ;
+        }
+        .images_names_2{
+            position: absolute;
+            left:-435px ;
+        }
+        .images_names_3{
+            position: absolute;
+            left:-225px ;
+        }
+        .images_names_4{
+            position: absolute;
+            left:-40px ;
+        }
+        .images_names_5{
+            position: absolute;
+            left:160px ;
+        }
+        .images_names_6{
+            position: absolute;
+            left:365px ;
+        }
+        .images_names_7{
+            position: absolute;
+            left:555px ;
+        }
+    
+        .carousel-item{
+           
+            top: 150px;
+            height: 500px;
+            max-width: 100%;
+          
+        }
+        .carousel-inner{
+           
+            position: relative;
+            left: -620px;
+        }
+        .carousel-control-prev{
+            position: absolute;
+            left: -670px;
+            top: 180px;
+        }
+        .carousel-control-next{
+            position: absolute;
+            left: 480px;
+            top: 180px;
+        }
+        #img1{
+            width: 1235px;
+            height: 400px;
+        }
+        #img2{
+            width: 1235px;
+            height: 400px;
+        }
+        #img3{
+            width: 1235px;
+            height: 400px;
+        }
+     
+        h3{
+            font-style: oblique;
+            font-size: x-large;
+            font-weight: 500;
+            font-weight: bold;
+            left: -600px;
+            top: 560px;
+            position: absolute;
+        }
+     .card{
+        position: absolute;
+        top: 870px;
+        left: -590px;
+     }
+     .cardd{
+        position: absolute;
+        top: 0px;
+        left:10px; 
+     }
+     .cards{
+        position: absolute;
+        top: 0px;
+        left:320px;
+     } 
+     .cardss{
+        position: absolute;
+        top: 0px;
+        left: 630px;
+     } 
+     .cardsss{
+        position: absolute;
+        top: 0px;
+        left: 940px;
+     }
+     .cardssss{
+        position: absolute;
+        top: 500px;
+        left:10px; 
+     }
+     .cardsssss{
+        position: absolute;
+        top: 500px;
+        left:320px; 
+     } 
+     .cardssssss{
+        position: absolute;
+        top: 500px;
+        left:630px; 
+     } 
+     .cardsssssss{
+        position: absolute;
+        top: 500px;
+        left:940px; 
+     }
+     .cardssssssss{
+        position: absolute;
+        top: 1000px;
+        left:10px; 
+     }
+     .cardsssssssss{
+        position: absolute;
+        top: 1000px;
+        left:320px; 
+     }
+     .cardssssssssss{
+        position: absolute;
+        top: 1000px;
+        left:630px; 
+     }
+     .cardsssssssssss{
+        position: absolute;
+        top: 1000px;
+        left:940px; 
+     }
+     .cardssssssssssss{
+        position: absolute;
+        top: 1500px;
+        left:10px; 
+     }
+     .cardsssssssssssss{
+        position: absolute;
+        top: 1500px;
+        left:320px; 
+     }
+     .cardssssssssssssss{
+        position: absolute;
+        top: 1500px;
+        left:630px; 
+     }
+     .cardsssssssssssssss{
+        position: absolute;
+        top: 1500px;
+        left:940px; 
+     }
+     .card-img-top{
+        height: 270px;
+     }
+     .card-text{
+        font-style: italic;
+     }
+     .inner_a{
+        overflow: hidden;
+        position: absolute;
+        left: -270px;
+        top: 603px;
+       
+     }
+     .inner_a img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_a:hover img{
+        transform: scale(1.5);
+     }
+     .inner_b{
+        overflow: hidden;
+        position: absolute;
+        left: -580px;
+        top: 603px;
+       
+     }
+     .inner_b img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_b:hover img{
+        transform: scale(1.5);
+     }
+     .inner_c{
+        overflow: hidden;
+        position: absolute;
+        left:40px;
+        top: 603px;
+       
+     }
+     .inner_c img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_c:hover img{
+        transform: scale(1.5);
+     }
+     .inner_d{
+        overflow: hidden;
+        position: absolute;
+        left: 350px;
+        top: 603px;
+       
+     }
+     .inner_d img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_d:hover img{
+        transform: scale(1.5);
+     }
+     h6{
+        font-size: small;
+        top: 40px;
+     }
+     .inner_e{
+        overflow: hidden;
+        position: absolute;
+        left: -580px;
+        top: 1103px;
+     }
+     .inner_e img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_e:hover img{
+        transform: scale(1.5);
+     }
+     .inner_f{
+        overflow: hidden;
+        position: absolute;
+        left: -270px;
+        top: 1103px;
+     }
+     .inner_f img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_f:hover img{
+        transform: scale(1.5);
+     }
+     .inner_g{
+        overflow: hidden;
+        position: absolute;
+        left: 40px;
+        top: 1103px;
+     }
+     .inner_g img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_g:hover img{
+        transform: scale(1.5);
+     }
+     .inner_h{
+        overflow: hidden;
+        position: absolute;
+        left: 350px;
+        top: 1103px;
+     }
+     .inner_h img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_h:hover img{
+        transform: scale(1.5);
+     }
+     .inner_i{
+        overflow: hidden;
+        position: absolute;
+        left: -580px;
+        top: 1603px;
+     }
+     .inner_i img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_i:hover img{
+        transform: scale(1.5);
+     }
+     .inner_j{
+        overflow: hidden;
+        position: absolute;
+        left:  -270px;
+        top: 1603px;
+     }
+     .inner_j img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_j:hover img{
+        transform: scale(1.5);
+     }
+     .inner_k{
+        overflow: hidden;
+        position: absolute;
+        left:  40px;
+        top: 1603px;
+     }
+     .inner_k img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_k:hover img{
+        transform: scale(1.5);
+     }
+     .inner_l{
+        overflow: hidden;
+        position: absolute;
+        left:  350px;
+        top: 1603px;
+     }
+     .inner_l img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_l:hover img{
+        transform: scale(1.5);
+     }
+     .inner_m{
+        overflow: hidden;
+        position: absolute;
+        left:  -580px;
+        top: 2104px;
+     }
+     .inner_m img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_m:hover img{
+        transform: scale(1.5);
+     }
+     .inner_n{
+        overflow: hidden;
+        position: absolute;
+        left:  -270px;
+        top: 2104px;
+     }
+     .inner_n img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_n:hover img{
+        transform: scale(1.5);
+     }
+     .inner_o{
+        overflow: hidden;
+        position: absolute;
+        left:  40px;
+        top: 2104px;
+     }
+     .inner_o img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_o:hover img{
+        transform: scale(1.5);
+     }
+     .inner_p{
+        overflow: hidden;
+        position: absolute;
+        left:  350px;
+        top: 2104px;
+     }
+     .inner_p img{
+        width: 250px;
+        transition: all 1.5s ease;
+     }
+     .inner_p:hover img{
+        transform: scale(1.5);
+     }
+     .checked{
+        color: orange;
+     }
+     .heart_m{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_2{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_3{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_4{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_5{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_6{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_7{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_8{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_9{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_10{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_11{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_12{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_13{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_14{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_15{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .heart_16{
+        position: absolute;
+        left: 220px;
+        top:15px;
+     }
+     .details{
+      position: relative;
+      top: 2050px;
+      left: -620px;
+     }
+     h5{
+      font-size: small;
+      color: grey;
+     }
+     h2{
+      font-size: large;
+      font-weight: bold;
+      color: grey;
+     }
+     .footer{
+      position:relative;
+      background-color: rgb(77, 77, 77);
+      top: 3620px;
+     }
+     .footer_list{
+      top:10px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      /* justify-content: space-between; */
+      justify-content: space-around;
+      color: white;
+     }
+     .footer_list li{
+      color: white;
+      font-size:small;
+     }
+     .footer_list a{
+      font-size:small;
+      color: white;
+     }
+     .footer_list a p{
+      font-size: small;
+      color: white;
+     }
+     hr{
+    position: relative;
+    top: 3632px;
+      
+     }
+ </style>
+<body>
+    <div class="header">
+        <img src="https://th.bing.com/th/id/OIP.TOV9_Ty9y11Qo98-0ZSHwAHaE8?w=285&h=190&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="" width="69px">
+    </div>
+    <div class="header_search">
+        <input class="header_search_input" type="search" placeholder="Search for the products,brands and more....." style="font-size: small;">
+      <img src="https://th.bing.com/th/id/OIP.rBAPLUE-pJfrFN7bOEt-DQAAAA?pid=ImgDet&rs=1" alt=" " width="15px">
+    </div>
+    <div class="header_log">
+        <input class="header_log_login" type="submit" value="login">
+    <img src="https://ouroneplace.com/images/icons/directory_icon_oneplace_c.png" alt="" width="12px">
+    </div>
+    <div class="sign">
+        <input class="signin" type="submit" value="Sign in">
+    <img src="https://cdn.icon-icons.com/icons2/1508/PNG/512/systemusers_104569.png" alt="" width="12px">
+    </div>
+    <div class="c_i">
+        <svg class="c_i" width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path class="_1bS9ic" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path></svg>
+        <path class="_1bS9ic" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path>
+      </div>
+    <div class="header_list">
+        <ul>
+            <li> <a href="">Become a seller</a> </li>
+            <div class="header_list_list_list_cart">
+                <ul>   
+                <li><a class="" href=""> Cart</a>
+                </li>
+                </ul>
+                </div>
+            <div class="header_list_list">
+                <a class="header_list_list_more" href="">More</a>
+                <div class="header_list_list_more_content">
+                    <a href="">Notification Preferences </a>
+                    <a href="">24x7 Customer Care</a>
+                    <a href="">Advertise</a>
+                    <a href="">Downlaod App</a>
+                </div>
+            </div>
+          <div class="images">
+            <img class="images_a" src="https://media.istockphoto.com/id/171302954/photo/groceries.jpg?s=612x612&w=0&k=20&c=D3MmhT5DafwimcYyxCYXqXMxr1W25wZnyUf4PF1RYw8=" alt="" width="100px" height="68px">
+            <img class="images_b"src="https://www.globalbrandsmagazine.com/wp-content/uploads/2023/01/Top-10-Mobile-Brands-in-World.jpg" alt="" width="110px">
+            <img class="images_c"src="https://media.istockphoto.com/id/1210471505/photo/mens-clothing-with-personal-accessories-isolated-on-white-background.jpg?s=170667a&w=0&k=20&c=qeYbvakad_UICTGQcvmYomk1y3aMoihQLHhuQFoXKFo=" alt="" width="110px" height="68px">
+            <img class="images_d"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuGBFwoIdSMN3VpV9MelAwGPDaVZTzBReX_GvTkdzE76YhaxA81TbfxpODkz5Mk5IuApE&usqp=CAU" alt="" width="100px" height="68px">
+            <img class="images_e"src="https://media.istockphoto.com/id/1196974664/photo/set-of-home-kitchen-appliances-in-the-room-on-the-wall-background.jpg?s=612x612&w=0&k=20&c=dUSAMg-LUh6j-4437kz30w8k7KgJiR8yrTTXhGiFh0s=" alt="" width="100px">
+            <img class="images_f"src="https://media.istockphoto.com/id/155380716/photo/commercial-jet-flying-over-clouds.jpg?s=612x612&w=0&k=20&c=idhnJ7ZdrLA1Dv5GO2R28A8WCx1SXCFVLu5_2cfdvXw=" alt="" width="100px" height="68px">
+            <img class="images_g"src="https://media.istockphoto.com/id/687165852/photo/toys.jpg?s=170667a&w=0&k=20&c=RQ60-qdmJkt9Wy7TL4JZ-VtWpY186szU4QU9RMBHSnI=" alt="" width="100px" height="68px">
+          </div>
+          <div class="images_names">
+            <a class="images_names_1" href="">Geoceries</a>
+            <a class="images_names_2" href="">Electronics</a>
+            <a class="images_names_3" href="">Fashion</a>
+            <a class="images_names_4" href="">Accessories</a>
+            <a class="images_names_5" href="">Appliances</a>
+            <a class="images_names_6" href="">Travel</a>
+            <a class="images_names_7" href="">Toys</a>
+          </div>
+        
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img id="img1" src="https://marketplace.canva.com/EAFGKRRskMs/1/0/1600w/canva-brown-and-beige-minimalist-fashion-banner-lYcbGpUSVGo.jpg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img id="img2" src="https://i.ytimg.com/vi/3Km78Bx_SWE/maxresdefault.jpg"  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img id="img3" src="https://i.ytimg.com/vi/QYQYMT2HaEw/maxresdefault.jpg"  alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="middle">
+            <div id="middle_text">
+                <h3>Featured Brands & Products</h3>
+                <div class="inner_b">
+            <img src="https://th.bing.com/th/id/OIP.zsfuXIz-f9tmPsS00A7rDgHaHa?pid=ImgDet&rs=1" class="card-img-top" alt="">
+           </div>
+           <div class="cardd">
+            <div class="card" style="width: 250px;">
+            <div class="card-body">
+            <p class="card-text"> Starts from 1,999/-</p>
+            <h6>Noise NoiseFit Evolve 3 Smartwatch.11% Bluetooth 5.3. Bluetooth Calling. 1.43 in Touch disply.</h6>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+           <div class="heart_1">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+        </div>
+            <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+       
+        </div>
+        </div>
+       </div>
+        </div>
+       <div class="inner_a">
+        <img src="https://i.ebayimg.com/images/g/tcMAAOSwQTNaMot5/s-l640.jpg" class="card-img-top" alt="" width="400px">
+        </div>
+        <div class="cards">
+        <div class="card" style="width: 250px;">
+        <div class="card-body">
+        <p class="card-text"> Upto 30%off  </p>
+           <h6>Tread a stylish path in our all-new luxurious and handcrafted men’s formal shoe collection.</h6>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+           <span class="fa fa-star"></span>
+           <div class="heart_2">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+           </div>
+           <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+       
+        </div>
+        </div>
+        </div>
+       </div>
+        </div>
+        <div class="inner_c">
+            <img src="https://images.bewakoof.com/original/peek-out-half-sleeve-t-shirt-men-s-printed-t-shirts-211979-1552462834.jpg" class="card-img-top" alt="">
+        </div>
+            <div class="cardss">
+        <div class="card" style="width: 250px;">   
+        <div class="card-body">
+        <p class="card-text"> 299/- onwards</p>
+        <h6>Find the best prices on oversized t shirts for men at Bewakoof. We have selection of baggy t-shirts. </h6>
+        <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+           <span class="fa fa-star"></span>
+           <div class="heart_3">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+           </div>
+           <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+        </div>
+        </div>
+       </div>
+        </div>
+        <div class="inner_d">
+            <img src="https://images.bewakoof.com/original/stay-cool-sliders-men-s-printed-sliders-210182-1552019320.jpg" class="card-img-top" alt="">
+        </div>
+            <div class="cardsss">
+        <div class="card" style="width: 250px;">
+        <div class="card-body">
+        <p class="card-text"> Starts from 499/-</p>
+        <h6>The key to your happiness is to own your slippers, own who you are, own how you look, own your family.</h6>
+        <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+           <span class="fa fa-star"></span>
+           <div class="heart_4">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+           </div>
+           <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+        </div>
+        </div>
+       </div>
+        </div>
+        <div class="inner_e">
+            <img src="https://www.customelements.in/wp-content/uploads/2021/02/AXOR-Apex-Turbine-Gloss-Black-Blue-Full-Face-Helmet-1.jpg" class="card-img-top" alt="">
+        </div>
+            <div class="cardssss">
+        <div class="card" style="width: 250px;">
+        <div class="card-body">
+        <p class="card-text"> Starts from 4999/-</p>
+        <h6>Ride safer using this full-face helmet from Axor. Equipped with an internal sun visor, an anti-fog visor.</h6>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <div class="heart_5">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+           </div>
+        <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+        </div>
+        </div>
+       </div>
+        </div>
+        <div class="inner_f">
+            <img src="https://i.pinimg.com/originals/da/d4/f5/dad4f5f6b13e8c15148e815ff5919d5e.png" class="card-img-top" alt="">
+        </div>
+            <div class="cardsssss">
+        <div class="card" style="width: 250px;">
+        <div class="card-body">
+        <p class="card-text"> Starts from 2499/-</p>
+        <h6> If you’re looking for a suitable bag that can help you step out in style, Skybags is here to meet your requirements.</h6>
+        <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+           <span class="fa fa-star"></span>
+           <div class="heart_6">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+           </div>
+           <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+        </div>
+        </div>
+       </div>
+        </div>
+        <div class="inner_g">
+            <img src="https://cdn.shopify.com/s/files/1/1127/3530/products/ABCStack_26387e70-f400-48e5-984e-9c101db2ca17.png?v=1601166993" class="card-img-top" alt="">
+        </div>
+            <div class="cardssssss">
+        <div class="card" style="width: 250px;">
+        <div class="card-body">
+        <p class="card-text"> 50% off on buy</p>
+        <h6>Metabolism In untrained individuals, changes in lean body mass and muscle strength during the initial weeks.</h6>
+        <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+           <div class="heart_7">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+           </div>
+           <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+        </div>
+        </div>
+       </div>
+        </div>
+        <div class="inner_h">
+            <img src="https://www.dhresource.com/0x0s/f2-albu-g5-M00-B7-77-rBVaI1l5nqGAQitBAACMkGi8QBA274.jpg/duhan-motorcycle-jacket-men-summer-breathable.jpg" class="card-img-top" alt="">
+        </div>
+            <div class="cardsssssss">
+        <div class="card" style="width: 250px;">
+        <div class="card-body">
+        <p class="card-text"> Starts from 14999/-</p>
+        <h6> Rynox Urban jackets are resistant to abrasion and offer safety at impact-prone areas including elbows, shoulders,etc..,</h6>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="heart_8">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+           </div>
+        <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+        </div>
+        </div>
+       </div>
+        </div>
+    
+        <div class="inner_i">
+            <img src="https://th.bing.com/th/id/OIP.jp_R1ZpdjWkUtaViUniT-wHaHC?pid=ImgDet&rs=1" class="card-img-top" alt="">
+        </div>
+            <div class="cardssssssss">
+        <div class="card" style="width: 250px;">
+        <div class="card-body">
+        <p class="card-text"> Starts from 999/-</p>
+        <h6>A power bank is a portable battery to recharge electronic gadgets when you don’t have access to a regular charger. </h6>
+        <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+           <span class="fa fa-star"></span>
+           <div class="heart_9">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+           </div>
+           <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+        </div>
+        </div>
+       </div>
+        </div>
+    
+        <div class="inner_j">
+            <img src="https://cdn.shopify.com/s/files/1/0514/4503/9286/products/Sport-bike02_5000x.jpg?v=1611895429" class="card-img-top" alt="">
+        </div>
+            <div class="cardsssssssss">
+        <div class="card" style="width: 250px;">
+        <div class="card-body">
+        <p class="card-text"> Starts from 29,999/-</p>
+        <h6>An electric bicycle is a motorized bicycle with an integrated electric motor used to assist propulsion.</h6>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="heart_10">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+           </div>
+        <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+        </div>
+        </div>
+       </div>
+        </div>
+    
+        <div class="inner_k">
+            <img src="https://th.bing.com/th/id/OIP.wl3CB7MDZRCcv35VCdNgrQHaKe?pid=ImgDet&rs=1" class="card-img-top" alt="">
+        </div>
+            <div class="cardssssssssss">
+        <div class="card" style="width: 250px;">
+        <div class="card-body">
+        <p class="card-text">Discount upto 30%</p>
+        <h6>A refrigerator, colloquially fridge, is a commercial and home appliance, consist of thermally insulated and a heat pump.</h6>
+        <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+           <div class="heart_11">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+           </div>
+           <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+        </div>
+        </div>
+       </div>
+        </div>
+    
+        <div class="inner_l">
+            <img src="https://th.bing.com/th/id/OIP.9hWBEqVKZdbRAtLdCWTIygHaHa?pid=ImgDet&w=600&h=600&rs=1" class="card-img-top" alt="">
+        </div>
+            <div class="cardsssssssssss">
+        <div class="card" style="width: 250px;">
+        <div class="card-body">
+        <p class="card-text"> Starts from 399/-</p>
+        <h6>A virtual reality headset (or VR headset) is a head-mounted device that provides virtual reality for the wearer.</h6>
+        <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+           <span class="fa fa-star"></span>
+           <div class="heart_12">
+            <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+           </div>
+           <div class="button">
+            <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+        </div>
+        </div>
+       </div>
+        </div>
+    
+        <div class="inner_m">
+         <img src="https://images-static.nykaa.com/media/catalog/product/b/2/b2ad46bMINIM00000027_2.jpg" class="card-img-top" alt="">
+     </div>
+         <div class="cardssssssssssss">
+     <div class="card" style="width: 250px;">
+     <div class="card-body">
+     <p class="card-text"> 15% discount on purchase</p>
+     <h6>Minimalist Sunscreen SPF 60 Silymarin is an antioxidant-rich SPF with modern UV filters to provide skin protection.</h6>
+     <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <div class="heart_13">
+         <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+        </div>
+        <div class="button">
+         <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+     </div>
+     </div>
+    </div>
+     </div>
+    
+     <div class="inner_n">
+      <img src="https://smartfalcon.net/wp-content/uploads/2020/09/Alexa-Echo-Dot-3rd-Generation-10.jpg" class="card-img-top" alt="">
+  </div>
+      <div class="cardsssssssssssss">
+  <div class="card" style="width: 250px;">
+  <div class="card-body">
+  <p class="card-text"> Starts from 2,399/-</p>
+  <h6>Echo devices connect to the voice-controlled intelligent personal assistant service Alexa.</h6>
+  <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star"></span>
+     <div class="heart_14">
+      <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+     </div>
+     <div class="button">
+      <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+  </div>
+  </div>
+ </div>
+  </div>
+  <div class="inner_o">
+   <img src="https://images.bewakoof.com/original/snitch-masai-lion-black-full-sleeves-shirt-snitch-men-s-masai-lion-full-sleeves-shirt-cotton-334611-1614007974.jpg" class="card-img-top" alt="">
+</div>
+   <div class="cardssssssssssssss">
+<div class="card" style="width: 250px;">
+<div class="card-body">
+<p class="card-text"> Starts from 1,299/-</p>
+<h6>Snitch - Men's Online Clothing Brand in India. Encapsulating inspirations from around the globe.</h6>
+<span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <div class="heart_15">
+   <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+  </div>
+  <div class="button">
+   <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+</div>
+</div>
+</div>
+</div>
+<div class="inner_p">
+   <img src="https://n4.sdlcdn.com/imgs/i/p/k/Cratos-Protein-Shaker-Gym-Bottle-SDL837532535-1-2e194.jpeg" class="card-img-top" alt="">
+</div>
+   <div class="cardsssssssssssssss">
+<div class="card" style="width: 250px;">
+<div class="card-body">
+<p class="card-text"> 599/- only</p>
+<h6>Boldfit Compact Gym Shaker Bottle Shaker Bottles for Protein Shake Bpa Free Material Plastic with good quality</h6>
+<span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <div class="heart_16">
+   <img src="https://th.bing.com/th/id/R.5dd95ac3d817d5a5a782da39e5b2eaa8?rik=pTJyJjeKHsuZ5Q&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fH%2fJ%2fr%2fl%2f7%2fT%2fgrey-heart.svg&ehk=vByJn06Nb4cbWfbn2f9fgsg7HxPpJfaR%2bDwB0AbPs1o%3d&risl=&pid=ImgRaw&r=0" alt="" width="20px">
+  </div>
+  <div class="button">
+   <button type="button" class="btn btn-secondary ms-5">Shop Now</button>
+</div>
+</div>
+</div>
+</div>
+<div class="details">
+   <h2 style="color: black;">Top Stories:Brand Directory</h2>
+   <br>
+   <h2>Shopify: The One-stop Shopping Destination</h2>
+    <h5>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.</h5>
+    <br>
+    <h5>What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question</h5>
+    <h2>
+      EMI on Debit Cards</h2>
+      <h5>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.
+      </h5>
+   <br>
+      <h2>Electronic Devices and Accessories</h2>
+   <h5>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our Back To College Store segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.</h5>
+   <br>
+   <h5>
+      Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store.</h5>
+      <br>
+      <h5>
+         How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation.</h5>
+      <br>
+         <h2>Lifestyle</h2>
+      <h5>Shopify, 'India ka Fashion Capital', is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.</h5>
+      <br>
+      <h2>Home and Furniture</h2>
+      <h5>Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our Durability Certified Furniture Store has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. Be FurniSure, always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes.</h5>
+      <br>
+      <h2>
+         Books, Sports and Games</h2>
+         <h5>Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving.</h5>
+      <br>
+      <h2>Grocery/Supermart</h2>
+      <h5>Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 1 Rupee Store presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.</h5>
+   </div>    
+      </div>
+        </div>
+</div>
+<hr>
+<div class="footer">
+<ul class="footer_list">
+   <li><a href="">ABOUT</a>
+   <ul>
+      <br><li> <a href=""> Contact us</a></li>
+   <li> <a href="">About Us</a> </li>
+   <li> <a href="">Careers</a</li>
+   <li> <a href="">Press</a></li>
+   <li> <a href="">wholesale</a></li></ul></li>
+   <li><a href="">HELP</a>
+   <ul>
+      <br><li><a href="">Payments</a></li>
+   <li><a href=""></a>Shipping</li>
+   <li><a href=""></a>FAQ</li>
+   <li><a href=""></a>Returns</li></ul>
+</li>
+   <li><a href="">CONSUMER POLICY</a>
+   <ul> <br><li><a href="">Return Policy</a></li>
+   <li><a href="">Terms Of Use</a></li>
+   <li><a href="">Security</a> </li>
+   <li><a href=""> Privacy</a></li>
+   <li><a href=""> Sitemap</a></li></ul>
+   </li>
+   <li><a href="">SOCIAL</a>
+   <ul><br><li><a href="">Facebook</a></li>
+   <li><a href="">  Twitter</a></li>
+   <li><a href=""> YouTube</a></li></ul>
+   </li>
+   <li><a href="">MAIL US</a><br>
+    <br><p>Shopify Internet Private Limited,<br>
+
+      Buildings Alyssa, Begonia &breve;
+      
+      Clove Embassy Tech Village,<br>
+      
+      Outer Ring Road, Devarabeesanahalli Village,<br>
+      
+      Bengaluru, 560103,<br>
+      
+      Karnataka, India</p></li>
+   <li><a href="">REGISTERED OFFICE ADDRESS</a> <br>
+   <br><p>Shopify Internet Private Limited,<br>
+
+      Buildings Alyssa, Begonia & <br>
+      
+      Clove Embassy Tech Village,<br>
+      
+      Outer Ring Road, Devarabeesanahalli Village, <br>
+      
+      Bengaluru, 560103,<br>
+      
+      Karnataka, India <br>
+      
+      CIN : U51109KA2012PTC066107 <br>
+      
+      Telephone: 044-45614700</p></li>
+</ul>
+</div>
+</body>
+</html>
